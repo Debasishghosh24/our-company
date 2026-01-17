@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
            /* Home html page */
-body {
+/* body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   width: auto;
-  height: fit-content;
+  height: fit-content; */
+
+html, body {
+  height: 100%;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height:max-content;     /* 🔑 MOST IMPORTANT */
+}
+
 header {
   background-color: rgb(207, 134, 121);
   padding: 20px;
@@ -27,6 +37,7 @@ header {
   padding-top: 166px;
   text-align: center;
   min-height: 100vh;
+  flex: 1;
 }
 #info {
   flex: 1;
